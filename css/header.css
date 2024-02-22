@@ -21,6 +21,7 @@
   color: var(--w);
   padding: 16px 0px;
   display: inline-block;
+  position: relative;
 }
 /*Efeito no links do menu, bicicletas, Seguros, Contato*/
 .header-menu a::after {
@@ -31,6 +32,7 @@
   background-color: #ffffff;
   margin-top: 4px;
   transition: 0.3s ease;
+  position: absolute;
 }
 .header-menu a:hover:after {
   width: 100%;
