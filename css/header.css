@@ -1,46 +1,52 @@
+.header-bg {
+  background-color: var(--c12);
+}
+
 .header-container {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .header-menu {
   display: flex;
-  gap: 40px;
-  padding: 0;
+  gap: 20px;
   flex-wrap: wrap;
 }
 .header-menu a {
-  text-decoration: none;
   color: var(--w);
-  display: block;
+  padding: 16px 0px;
+  display: inline-block;
 }
-
+/*RESPONSIVIDADE DO MENU*/
 @media (max-width: 800px) {
   .header-container {
-    padding: 10px;
+    gap: 20px;
   }
   .header-menu a {
     background-color: var(--c11);
-    padding: 10px 20px;
+    padding: 12px 16px;
     border-radius: 4px;
-    font-size: 18px;
   }
   .header-menu a:hover {
-    background-color: var(--c8);
-  }
-  .header-menu {
-    gap: 10px;
-    list-style: none;
+    background-color: var(--c10);
   }
 }
 @media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
   .header-menu a {
-    font-size: 12px;
+    padding: 8px 12px;
+    font-size: 14px;
   }
 }
+
 @media (max-width: 465px) {
   .header-container {
     display: block;
