@@ -1,7 +1,6 @@
 .header-bg {
   background-color: var(--c12);
 }
-
 .header-container {
   display: flex;
   max-width: 1200px;
@@ -15,7 +14,7 @@
 }
 .header-menu {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 .header-menu a {
@@ -23,9 +22,22 @@
   padding: 16px 0px;
   display: inline-block;
 }
-/*RESPONSIVIDADE DO MENU*/
+/*Efeito no links do menu, bicicletas, Seguros, Contato*/
+.header-menu a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: #ffffff;
+  margin-top: 4px;
+  transition: 0.3s ease;
+}
+.header-menu a:hover:after {
+  width: 100%;
+}
+/*Responsividade do menu*/
 @media (max-width: 800px) {
-  .header-container {
+  .header-menu {
     gap: 20px;
   }
   .header-menu a {
@@ -36,6 +48,9 @@
   .header-menu a:hover {
     background-color: var(--c10);
   }
+  .header-menu a:hover::after {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   .header-menu {
@@ -44,12 +59,17 @@
   .header-menu a {
     padding: 8px 12px;
     font-size: 14px;
+    gap: 20px;
   }
 }
-
 @media (max-width: 465px) {
   .header-container {
     display: block;
     padding: 20px;
+  }
+  .header-menu {
+    margin-top: 10px;
+    gap: 20px;
+    justify-content: center;
   }
 }
