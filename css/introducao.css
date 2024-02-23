@@ -1,6 +1,7 @@
 .introducao-bg {
   background-color: var(--c12);
   height: 670px;
+  position: relative;
 }
 .introducao {
   max-width: 1200px;
@@ -28,6 +29,11 @@
   line-height: 36px;
   color: var(--c4);
 }
+.introducao-container img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top right;
+}
 .introducao a {
   padding: 16px 32px;
   border-radius: 5px;
@@ -38,4 +44,13 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
+}
+.introducao-bg::after {
+  content: "";
+  display: block;
+  background: url("../img/deco.png") no-repeat center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
 }
