@@ -57,3 +57,21 @@
   position: absolute;
   bottom: 0;
 }
+
+@media (max-width: 1200px) {
+  .introducao h1 {
+    font-size: 48px;
+  }
+  .introducao p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao-container {
+    gap: 0;
+  }
+  
+}
