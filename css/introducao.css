@@ -1,6 +1,6 @@
 .introducao-bg {
   background-color: var(--c12);
-  height: 670px;
+  height: 640px;
   position: relative;
 }
 .introducao {
@@ -9,6 +9,9 @@
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
   gap: 10px;
+}
+.introducao-container span {
+  color: var(--p1);
 }
 .introducao-container {
   display: grid;
@@ -29,10 +32,10 @@
   line-height: 36px;
   color: var(--c4);
 }
-.introducao-container img {
-  height: 100%;
+.introducao img {
   object-fit: cover;
-  object-position: top right;
+  object-position: left;
+  border-radius: 4px;
 }
 .introducao a {
   padding: 16px 32px;
