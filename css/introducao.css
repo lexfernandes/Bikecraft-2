@@ -37,7 +37,7 @@
   object-position: left;
   border-radius: 4px;
 }
-.introducao a {
+.introducao-container a {
   padding: 16px 32px;
   border-radius: 5px;
   background: linear-gradient(180deg, #ffc800 0%, #f2a60d 100%);
@@ -47,6 +47,9 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
+}
+.introducao-container a:hover {
+  background: #f2a60d;
 }
 .introducao-bg::after {
   content: "";
@@ -73,5 +76,6 @@
   .introducao-container {
     gap: 0;
   }
-  
+  .introducao picture img {
+  }
 }
