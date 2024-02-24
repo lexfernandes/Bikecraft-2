@@ -1,7 +1,7 @@
 .introducao-bg {
   background-color: var(--c12);
   position: relative;
-  box-shadow: inset 0px -120px #fff;
+  box-shadow: inset 0px -120px var(--0);
 }
 .introducao {
   display: grid;
@@ -12,48 +12,22 @@
   box-sizing: border-box;
   padding: 0px 20px;
 }
-.introducao-conteudo h1 span {
-  color: var(--p1);
-}
 .introducao-conteudo {
   align-self: end;
   padding-bottom: 200px;
 }
 .introducao h1 {
   margin-bottom: 32px;
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 1.125;
-  color: #fff;
+  color: var(--0);
 }
 .introducao p {
   margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.5;
   color: var(--c4);
-  font-family: "Roboto", sans-serif;
 }
 .introducao img {
   object-fit: cover;
   height: 100%;
   border-radius: 4px;
-}
-
-.introducao-conteudo a {
-  padding: 16px 32px;
-  border-radius: 4px;
-  background: linear-gradient(#ffc800, #f2a60d);
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
-  color: var(--p5);
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 24px;
-  display: inline-block;
-}
-.introducao-conteudo a:hover {
-  background: linear-gradient(#ffb60d, #e59317);
 }
 .introducao-bg::after {
   content: "";
@@ -86,9 +60,8 @@
   .introducao-bg {
     background: var(--c11);
     padding-top: 40px;
-    box-shadow: inset 0px -60px #fff;
+    box-shadow: inset 0px -60px var(--0);
   }
-
   .introducao {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -99,12 +72,5 @@
   .introducao img {
     height: 300px;
     width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .introducao-conteudo a {
-    padding: 12px 16px;
-    font-size: 12px;
   }
 }
