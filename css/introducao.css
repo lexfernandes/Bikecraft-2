@@ -1,55 +1,58 @@
 .introducao-bg {
   background-color: var(--c12);
-  height: 640px;
   position: relative;
+  box-shadow: inset 0px -120px #fff;
 }
 .introducao {
-  max-width: 1200px;
   display: grid;
+  max-width: 1200px;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
-  gap: 10px;
+  gap: 0px 40px;
+  box-sizing: border-box;
+  padding: 0px 20px;
 }
-.introducao-container span {
+.introducao-conteudo h1 span {
   color: var(--p1);
 }
-.introducao-container {
-  display: grid;
-  align-content: center;
-  justify-items: start;
-  gap: 1.25rem;
-  padding: 10px;
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 200px;
 }
 .introducao h1 {
+  margin-bottom: 32px;
   font-size: 64px;
   font-weight: 600;
-  line-height: 72px;
+  line-height: 1.125;
   color: #fff;
 }
 .introducao p {
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 1.5;
   color: var(--c4);
 }
 .introducao img {
   object-fit: cover;
-  object-position: left;
+  height: 100%;
   border-radius: 4px;
 }
-.introducao-container a {
+
+.introducao-conteudo a {
   padding: 16px 32px;
-  border-radius: 5px;
-  background: linear-gradient(180deg, #ffc800 0%, #f2a60d 100%);
+  border-radius: 4px;
+  background: linear-gradient(#ffc800, #f2a60d);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   color: var(--p5);
   text-transform: uppercase;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 24px;
+  display: inline-block;
 }
-.introducao-container a:hover {
-  background: #f2a60d;
+.introducao-conteudo a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
 }
 .introducao-bg::after {
   content: "";
@@ -58,9 +61,14 @@
   width: 100px;
   height: 100px;
   position: absolute;
-  bottom: 0;
+  bottom: 120px;
 }
-
+.bicicleta1 {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+/*=========== RESPONSIVIDADE  ================*/
 @media (max-width: 1200px) {
   .introducao h1 {
     font-size: 48px;
@@ -73,9 +81,10 @@
   .introducao {
     grid-template-columns: 1fr;
   }
-  .introducao-container {
+  .introducao-conteudo {
     gap: 0;
   }
-  .introducao picture img {
+  .bicicleta1 {
+    background: url(../img/bicicleta2.png);
   }
 }
