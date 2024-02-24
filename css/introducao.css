@@ -32,6 +32,7 @@
   font-weight: 400;
   line-height: 1.5;
   color: var(--c4);
+  font-family: "Roboto", sans-serif;
 }
 .introducao img {
   object-fit: cover;
@@ -71,20 +72,39 @@
 /*=========== RESPONSIVIDADE  ================*/
 @media (max-width: 1200px) {
   .introducao h1 {
-    font-size: 48px;
+    font-size: 3rem;
   }
   .introducao p {
     font-size: 18px;
   }
 }
 @media (max-width: 800px) {
+  .introducao h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .introducao-bg {
+    background: var(--c11);
+    padding-top: 40px;
+    box-shadow: inset 0px -60px #fff;
+  }
+
   .introducao {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
   .introducao-conteudo {
-    gap: 0;
+    padding-bottom: 0;
   }
-  .bicicleta1 {
-    background: url(../img/bicicleta2.png);
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao-conteudo a {
+    padding: 12px 16px;
+    font-size: 12px;
   }
 }
