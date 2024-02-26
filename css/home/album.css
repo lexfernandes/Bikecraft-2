@@ -1,47 +1,44 @@
-.album-texto {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+.container-album {
   max-width: 1200px;
   margin: 0 auto;
 }
-.album-texto h2 {
-  grid-column: 1 / -1;
-  font-family: Poppins;
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-album ul {
+  display: flex;
+  gap: 40px;
+}
+
+.container-album h2 {
   font-size: 64px;
-  font-style: normal;
   font-weight: 600;
   line-height: 72px;
 }
-.card img {
-  margin-bottom: 16px;
-}
-.card p {
+
+.container-album h3 {
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
   color: var(--c11);
-  margin-bottom: 8px;
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.card span {
+.container-album span {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
   color: var(--c8);
-  margin-left: 20px;
 }
-.card p::before {
+
+.container-album h3::before {
   content: "";
   display: block;
   width: 12px;
   height: 8px;
   background-color: var(--p1);
-}
-.detalhes {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
 }
