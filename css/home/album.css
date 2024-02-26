@@ -14,15 +14,29 @@
   font-weight: 600;
   line-height: 72px;
 }
-.container-img p {
+.card img {
+  margin-bottom: 16px;
+}
+.card p {
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
   color: var(--c11);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.container-img span {
+.card span {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
   color: var(--c8);
+}
+.card p::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
 }

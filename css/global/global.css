@@ -5,6 +5,7 @@ body {
   margin: 0;
   list-style: none;
   height: 1500px;
+  box-sizing: border-box;
 }
 img {
   max-width: 100%;
