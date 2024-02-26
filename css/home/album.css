@@ -30,20 +30,23 @@ h3 {
   align-items: center;
   gap: 8px;
 }
-.container-album .preço {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  color: var(--c8);
-  margin-left: 20px;
-}
-
 .container-album h3::before {
   content: "";
   display: block;
   width: 12px;
   height: 8px;
   background-color: var(--p1);
+  transition: 0.3s ease;
+}
+.container-album h3:hover::before {
+  width: 6%;
+}
+.container-album .preço {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--c8);
+  margin-left: 20px;
 }
 .container-album ul li {
   display: flex;
