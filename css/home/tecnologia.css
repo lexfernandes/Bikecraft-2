@@ -1,0 +1,51 @@
+.tecnologia-bg {
+  background-color: var(--c11);
+  margin-top: 120px;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.tecnologia-texto {
+  place-self: center;
+}
+.tecnologia-texto h2 {
+  color: var(--c5);
+  text-transform: uppercase;
+}
+.tecnologia-texto h1 {
+  color: var(--0);
+  margin-bottom: 32px;
+}
+.tecnologia-texto p {
+  color: var(--c4);
+  margin-bottom: 20px;
+}
+.tecnologia-texto a {
+  color: var(--p1);
+  text-transform: uppercase;
+  border-bottom: 4px solid var(--p1);
+  display: inline-block;
+  margin-bottom: 92px;
+}
+/*LISTA DENTRO DO GRID*/
+.container-tecnologia ul {
+  display: flex;
+  gap: 40px;
+}
+.container-tecnologia ul li h3 {
+  color: var(--c1);
+}
+.container-tecnologia ul li p {
+  color: var(--c4);
+}
