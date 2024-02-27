@@ -38,14 +38,21 @@ p {
   display: inline-block;
   margin-bottom: 92px;
 }
+.tecnologia-texto a:hover {
+  color: var(--0);
+  border-bottom: 4px solid var(--0);
+}
 /*LISTA DENTRO DO GRID*/
 .container-tecnologia ul {
   display: flex;
   gap: 40px;
 }
+
 .container-tecnologia ul li h3 {
   color: var(--c1);
+  margin-bottom: 8px;
 }
 .container-tecnologia ul li p {
   color: var(--c4);
+  max-width: 30ch;
 }
