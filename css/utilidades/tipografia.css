@@ -1,3 +1,4 @@
+/* peso da fonte, tamanho, line heigth e modelo tipografia*/
 .font-1-xxl {
   font: 600 4rem/1.125 "Poppins", sans-serif;
 }
@@ -15,6 +16,8 @@
 }
 .font-2-l-b {
   font: 500 1.5rem/1.5 "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
 }
 .font-1-m {
   font: 500 1.125rem/1.35 "Poppins", sans-serif;
@@ -36,4 +39,22 @@
 }
 .font-1-xs {
   font: 600 0.75rem/1.35 "Poppins", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .font-1-xxl {
+    font-size: 3rem;
+  }
+  .font-2-l .font-2-l-b {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-1-xxl {
+    font-size: 2rem;
+  }
+  .font-1-xl .font-2-xl {
+    font-size: 1.5rem;
+  }
 }
