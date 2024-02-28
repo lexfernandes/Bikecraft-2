@@ -1,37 +1,29 @@
 .container-album {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 .container-album ul {
   display: flex;
   gap: 40px;
-}
-.container-album ul li {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.container-album ul li img {
-  margin-bottom: 16px;
+  padding: 0 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
+.container-album img {
+  margin-bottom: 16px;
+}
+.container-album a {
+  display: block;
+}
 .container-album h2 {
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 72px;
-  margin: 0 150px;
   margin-bottom: 40px;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 .container-album h3 {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 40px;
   color: var(--c11);
   display: flex;
   align-items: center;
@@ -49,12 +41,8 @@ h3 {
 .container-album h3:hover::before {
   width: 6%;
 }
-.container-album .preço {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
+.container-album span {
   color: var(--c8);
-  margin-left: 20px;
 }
 
 @media (max-width: 960px) {

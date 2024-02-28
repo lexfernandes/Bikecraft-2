@@ -2,7 +2,6 @@
   background-color: var(--c12);
   position: relative;
   box-shadow: inset 0px -120px var(--0);
-  margin-bottom: 120px;
 }
 .introducao {
   display: grid;
