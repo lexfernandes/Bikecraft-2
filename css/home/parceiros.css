@@ -21,6 +21,8 @@
 .parceiros img {
   margin: auto;
 }
+
+/*separacao por bordas*/
 .parceiros li:nth-child(1),
 .parceiros li:nth-child(5) {
   border-left: none;
@@ -28,7 +30,7 @@
 .parceiros li:nth-child(n + 5) {
   border-top: 2px solid var(--c2);
 }
-
+/* responsividade e configuração das bordas*/
 @media (max-width: 800px) {
   .parceiros {
     padding-bottom: 60px;
