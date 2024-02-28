@@ -1,0 +1,54 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--p1);
+  overflow: hidden;
+}
+.depoimento img {
+  object-fit: cover;
+  width: 100%;
+  height: 520px;
+}
+.depoimento-conteudo {
+  padding: 40px 80px;
+  align-self: end;
+}
+.depoimento-conteudo p {
+  color: var(--p5);
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 50px; /* 125% */
+  margin-bottom: 32px;
+  position: relative;
+  max-width: 32ch;
+}
+.depoimento-conteudo p::before {
+  content: "";
+  display: inline-block;
+  background-image: url(/img/“.png);
+  width: 39px;
+  height: 29px;
+  left: -39px;
+  top: -29px;
+  position: absolute;
+}
+.depoimento-conteudo p::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/img/”.png);
+  width: 39px;
+  height: 29px;
+  bottom: -14px;
+  position: absolute;
+}
+.depoimento-conteudo span {
+  color: var(--p4, #714a03);
+  font-family: "Source Serif Pro";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.36px;
+}
