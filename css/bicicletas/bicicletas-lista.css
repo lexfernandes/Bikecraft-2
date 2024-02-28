@@ -21,10 +21,6 @@
 }
 .container-album h2 {
   margin-bottom: 40px;
-  max-width: 1200px;
-  padding: 0 20px;
-  box-sizing: border-box;
-  margin: 0 auto;
 }
 .container-album h3 {
   color: var(--c11);

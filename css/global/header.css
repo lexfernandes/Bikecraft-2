@@ -3,14 +3,12 @@
 }
 .header-container {
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
-  padding: 20px;
   flex-wrap: wrap;
   gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .header-menu {
   display: flex;
