@@ -8,9 +8,19 @@
   text-transform: uppercase;
   display: inline-block;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  max-width: max-content;
 }
 .btn:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.btn-secundario {
+  border-radius: 5px;
+  background: linear-gradient(#606060, #474747);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  padding: 16px 32px;
+  gap: 10px;
+  max-width: max-content;
 }
 
 @media (max-width: 600px) {
