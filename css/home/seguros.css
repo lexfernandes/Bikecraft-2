@@ -33,9 +33,12 @@
   gap: 20px;
 }
 .seguros-item li {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
   flex-wrap: nowrap;
+  position: relative;
+  justify-content: center;
 }
 
 .seguros-item li::before {
@@ -44,7 +47,9 @@
   background-image: url(/img/lista.svg);
   width: 13px;
   height: 9px;
-  margin-right: 9px;
+  position: absolute;
+  left: -20px;
+  top: 9px;
 }
 .seguros-item a {
   grid-column: 1;
