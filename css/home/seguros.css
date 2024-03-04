@@ -35,7 +35,7 @@
 .seguros-item li {
   position: relative;
   margin-bottom: 20px;
-  box-sizing: border-box;
+  flex-wrap: nowrap;
 }
 
 .seguros-item li::before {
