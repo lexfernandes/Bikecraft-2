@@ -55,3 +55,8 @@
     padding: 20px 10px;
   }
 }
+@media (max-width: 400px) {
+  .seguros-item ul li {
+    font-size: 16px;
+  }
+}
