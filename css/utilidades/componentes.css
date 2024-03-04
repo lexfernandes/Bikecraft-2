@@ -21,6 +21,8 @@
   padding: 16px 32px;
   gap: 10px;
   max-width: max-content;
+  color: var(--0);
+  text-transform: uppercase;
 }
 
 @media (max-width: 600px) {
