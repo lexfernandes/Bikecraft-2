@@ -24,6 +24,11 @@
   color: var(--0);
   text-transform: uppercase;
 }
+@media (max-width: 800px) {
+  .btn-secundario {
+    white-space: nowrap;
+  }
+}
 
 @media (max-width: 600px) {
   .btn {
