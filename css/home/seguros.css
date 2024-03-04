@@ -44,7 +44,7 @@
 .seguros-item li::before {
   content: "";
   display: inline-block;
-  background-image: url(/img/lista.svg);
+  background-image: url("./img/lista.svg");
   width: 13px;
   height: 9px;
   position: absolute;
