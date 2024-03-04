@@ -67,10 +67,6 @@
     display: block;
     padding: 20px;
   }
-  .header-container img {
-    display: block;
-    padding: 10px;
-  }
   .header-menu {
     margin-top: 10px;
     gap: 20px;
