@@ -1,0 +1,30 @@
+.termos h2:nth-child(1) {
+  margin-top: 120px;
+}
+.termos h2 {
+  position: relative;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+.termos h2::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 10px;
+  background: var(
+    --gradiente-p1,
+    linear-gradient(180deg, #ffc800 0%, #f7b108 91.93%, #f2a60d 100%)
+  );
+  position: absolute;
+  left: -34px;
+  top: 13px;
+}
+
+.termos p {
+  margin-bottom: 12px;
+}
+.termos p:nth-child(4),
+.termos p:nth-child(8),
+.termos p:nth-child(12) {
+  margin-bottom: 48px;
+}
