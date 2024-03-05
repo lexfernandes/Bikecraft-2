@@ -31,9 +31,12 @@
   max-width: 290px;
   height: 2px;
   background-color: var(--c11);
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .rede-sociais {
   display: flex;
   gap: 35px;
+}
+.informacoes li {
+  margin-bottom: 10px;
 }
