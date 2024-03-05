@@ -1,0 +1,31 @@
+.footer-bg {
+  background-color: var(--c12);
+  color: #fff;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+.rede-sociais {
+  grid-column: 2;
+}
+.footer-bg p {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.footer-contato li {
+  margin-bottom: 10px;
+}
+.footer-contato :nth-child(2) {
+  border-bottom: 1px solid var(--c11);
+  max-width: fit-content;
+}
