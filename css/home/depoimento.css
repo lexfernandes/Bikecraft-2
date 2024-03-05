@@ -10,7 +10,7 @@
   height: 100%;
 }
 .depoimento-conteudo {
-  padding: 40px 80px;
+  padding: 40px 40px 80px 80px;
   align-self: end;
 }
 .depoimento-conteudo p {
@@ -33,7 +33,6 @@
   content: "”";
   font-size: 5rem;
   color: var(--p2);
-
   position: absolute;
 }
 .depoimento-conteudo span {
