@@ -37,6 +37,35 @@
   display: flex;
   gap: 35px;
 }
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
 .informacoes li {
   margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .rede-sociais {
+    grid-column: 1;
+    margin-top: 15px;
+  }
+  .footer-bg p {
+    padding: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .informacoes {
+    margin-top: 20px;
+  }
 }

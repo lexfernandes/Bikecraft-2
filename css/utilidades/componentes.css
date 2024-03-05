@@ -24,6 +24,9 @@
   color: var(--0);
   text-transform: uppercase;
 }
+.btn-secundario:hover {
+  background: var(--c8);
+}
 @media (max-width: 800px) {
   .btn-secundario {
     white-space: nowrap;
