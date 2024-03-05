@@ -11,7 +11,8 @@ img {
   max-width: 100%;
   display: block;
 }
-img[src$=".jpg"] { /*somente arquivos que tem extensão JPG*/
+img[src$=".jpg"] {
+  /*somente arquivos que tem extensão JPG*/
   border-radius: 4px;
 }
 ul {
@@ -30,7 +31,8 @@ p {
 h1,
 h2,
 h3,
-h4 {
+h4,
+blockquote {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
