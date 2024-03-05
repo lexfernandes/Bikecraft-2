@@ -25,7 +25,15 @@
 .footer-contato li {
   margin-bottom: 10px;
 }
-.footer-contato :nth-child(2) {
-  border-bottom: 1px solid var(--c11);
-  max-width: fit-content;
+.footer-contato li:nth-child(even)::after {
+  content: "";
+  display: block;
+  max-width: 290px;
+  height: 2px;
+  background-color: var(--c11);
+  margin-top: 20px;
+}
+.rede-sociais {
+  display: flex;
+  gap: 35px;
 }
