@@ -21,6 +21,24 @@
 .btn.secundario:hover {
   background: var(--c9);
 }
+
+.btn.seta {
+  display: flex;
+  align-items: center;
+}
+
+.btn.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../img/seta.png") no-repeat;
+  transition: 0.3s;
+}
+.btn.seta:hover::after {
+  transform: translateX(4px);
+}
 @media (max-width: 800px) {
   .btn-secundario {
     white-space: nowrap;

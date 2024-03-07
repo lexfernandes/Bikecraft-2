@@ -1,3 +1,12 @@
+.bicicletas-bg {
+  /* Feito com gradiente, shadow não aceita % */
+  background: linear-gradient(
+    to right,
+    var(--0) 30%,
+    var(--c11) 0%
+  ); /* não quer funcionar*/
+}
+
 /* alinhamentos dos itens principais.*/
 .bicicletas {
   display: grid;
@@ -63,6 +72,9 @@
   align-content: start;
 }
 @media (max-width: 800px) {
+  .bicicletas-bg {
+    background: var(--c11);
+  }
   .bicicletas {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -73,5 +85,13 @@
 @media (max-width: 600px) {
   .bicicletas-conteudo {
     grid-template-columns: 1fr;
+  }
+  .bicicletas a {
+    place-self: start;
+  }
+  .bicicletas ul {
+    margin-bottom: 32px;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1rem;
   }
 }
