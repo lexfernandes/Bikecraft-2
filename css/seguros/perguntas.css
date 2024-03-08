@@ -1,0 +1,19 @@
+.perguntas-lista {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.perguntas-lista h2 {
+  margin-bottom: 50px;
+}
+.perguntas-lista ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.perguntas-lista li {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.perguntas-lista p {
+  font-weight: 400;
+}
