@@ -7,18 +7,41 @@
   gap: 40px;
   padding-top: 75px;
   padding-bottom: 75px;
-  align-items: center;
+}
+.vantagens-conteudo {
+  display: grid;
+  align-items: stretch;
+  gap: 5px;
 }
 .vantagens h2 {
   grid-column: 1 / -1;
   margin-bottom: 50px;
 }
-.vantagens-conteudo {
-  display: flex;
-  flex-direction: column;
-  place-items: start center;
-}
 .vantagens-conteudo p {
-  max-width: 40ch;
-  text-align: start;
+  max-width: 45ch;
+}
+.vantagens-conteudo img {
+  max-width: 24px;
+}
+@media (max-width: 1035px) {
+  .vantagens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .vantagens h2 {
+    font-size: 2rem;
+  }
+  .vantagens {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .vantagens {
+    grid-template-columns: 1fr;
+  }
+  .vantagens h2 {
+    margin-bottom: 0;
+  }
 }
