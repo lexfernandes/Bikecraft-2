@@ -1,0 +1,24 @@
+.vantagens-bg {
+  background-color: var(--c7);
+}
+.vantagens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  align-items: center;
+}
+.vantagens h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 50px;
+}
+.vantagens-conteudo {
+  display: flex;
+  flex-direction: column;
+  place-items: start center;
+}
+.vantagens-conteudo p {
+  max-width: 40ch;
+  text-align: start;
+}
