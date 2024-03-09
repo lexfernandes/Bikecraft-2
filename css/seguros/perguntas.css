@@ -7,15 +7,27 @@
 }
 .perguntas-lista p {
   font-weight: 400;
+  padding-left: 20px;
+}
+.perguntas-lista a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 .perguntas-lista li {
-  margin-bottom: 10px;
   font-weight: 600;
+  list-style: none;
+  padding: 20px 40px;
 }
-.perguntas-lista li::before {
+.perguntas-lista li:nth-child(odd) {
+  background-color: var(--c1);
+  padding: 20px 40px;
+}
+.perguntas-lista a::before {
   content: "";
-  display: inline-block;
-  width: 0.75rem;
-  height: 0.5rem;
+  display: block;
+  width: 12px;
+  height: 8px;
   background: var(--p1);
 }
