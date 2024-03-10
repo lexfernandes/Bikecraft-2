@@ -1,33 +1,48 @@
-.perguntas-lista {
-  padding-top: 75px;
-  padding-bottom: 75px;
+.perguntas {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-.perguntas-lista h2 {
-  margin-bottom: 50px;
+.perguntas h2 {
+  margin-bottom: 60px;
 }
-.perguntas-lista p {
-  font-weight: 400;
+.perguntas dd {
   padding-left: 20px;
+  padding-top: 16px;
+  max-width: 80ch;
 }
-.perguntas-lista a {
-  display: flex;
+.perguntas dt {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 8px;
-  margin-bottom: 16px;
+  cursor: pointer;
 }
-.perguntas-lista li {
-  font-weight: 600;
-  list-style: none;
-  padding: 20px 40px;
-}
-.perguntas-lista li:nth-child(odd) {
-  background-color: var(--c1);
-  padding: 20px 40px;
-}
-.perguntas-lista a::before {
+.perguntas dt::before {
   content: "";
-  display: block;
+  display: inline-block;
   width: 12px;
   height: 8px;
   background: var(--p1);
+}
+.perguntas dt::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: url(../../img/seta-abrir.svg);
+  transition: 0.3s;
+}
+.perguntas dt:hover::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: url(../../img/seta-fechar.svg);
+}
+.perguntas dl div:nth-child(odd) {
+  background-color: var(--c1);
+}
+.perguntas dl div {
+  padding: 20px;
+  border-radius: 4px;
 }
