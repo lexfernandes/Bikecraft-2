@@ -33,16 +33,23 @@
   transition: 0.3s;
 }
 .perguntas dt:hover::after {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 6px;
-  background: url(../../img/seta-fechar.svg);
+  transform: rotate(180deg);
 }
-.perguntas dl div:nth-child(odd) {
+
+.perguntas dl > div:nth-child(odd) {
   background-color: var(--c1);
 }
-.perguntas dl div {
+.perguntas dl > div {
   padding: 20px;
   border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  .perguntas {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .perguntas h2 {
+    margin-bottom: 40px;
+  }
 }
