@@ -16,3 +16,6 @@
 /*Seguros*/
 @import "./seguros/vantagens.css";
 @import "./seguros/perguntas.css";
+
+/*Bicicletas*/
+@import "./bicicletas/nimbus-stark.css";
