@@ -1,0 +1,29 @@
+.containers-album {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.containers-album h2 {
+  margin-bottom: 40px;
+}
+.containers-album ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.containers-album h3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.containers-album h3::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+  transition: 0.3s ease;
+  margin-right: 8px;
+}
+.containers-album a:hover h3::before {
+  width: 24px;
+}
