@@ -1,0 +1,13 @@
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+.contato-dados {
+  background-color: var(--c12);
+  border-radius: 4px;
+  padding: 60px 60px;
+}
+.contato-dados h2 {
+  margin-bottom: 60px;
+}
