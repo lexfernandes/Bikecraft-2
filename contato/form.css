@@ -1,6 +1,7 @@
 /* FORMULARIO */
 .contato-formulario {
   padding: 60px 60px;
+  margin-bottom: 120px;
 }
 .contato-formulario form {
   display: grid;
