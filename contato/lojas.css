@@ -7,12 +7,16 @@
   grid-column: 1 / -1;
 }
 .lojas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 32px 32px;
 }
 .lojas-conteudo h3 {
   display: flex;
   align-items: center;
   gap: 12px;
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
 }
 .lojas-conteudo h3::before {
   content: "";
@@ -20,4 +24,21 @@
   width: 14px;
   height: 8px;
   background-color: var(--p1);
+}
+
+.lojas-dados {
+  margin-bottom: 23px;
+  border-left: 2px solid var(--c3);
+  padding: 0px 12px;
+}
+.lojas-dados a,
+p {
+  display: block;
+  margin-bottom: 8px;
+}
+.lojas-tempo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 600;
 }
