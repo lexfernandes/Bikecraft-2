@@ -6,6 +6,12 @@
 .lojas h2 {
   grid-column: 1 / -1;
 }
+.lojas-item {
+  border-radius: 0px 0px 5px 5px;
+  background: var(--c1, #fff);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 120px;
+}
 .lojas-conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
