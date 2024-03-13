@@ -59,3 +59,11 @@
   margin-left: 28px;
 }
 
+@media (max-width: 800px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+  .contato-dados {
+    padding: 20px 20px;
+  }
+}
