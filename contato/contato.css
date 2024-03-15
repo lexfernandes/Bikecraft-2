@@ -6,7 +6,9 @@
   grid-template-columns: 5fr 7fr;
   align-items: start;
 }
-
+.contato-dados {
+  background-color: var(--c12);
+}
 .contato-dados,
 .contato-formulario {
   border-radius: 4px 0px 0px 4px;
