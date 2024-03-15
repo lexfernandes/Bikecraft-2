@@ -20,7 +20,7 @@
     <meta name="description" content="Bicicletas" />
     <title>Contato | Bikecraft</title>
   </head>
-  <body id="bicicleta">
+  <body id="contato">
     <header class="header-bg">
       <div class="header-container container">
         <a href="./"
@@ -40,7 +40,7 @@
       </div>
     </header>
 
-    <main class="titulo-bicicleta-bg">
+    <main>
       <div class="titulo-bg">
         <!--Background da pagina-->
         <div class="titulo container">
@@ -50,56 +50,64 @@
           </h1>
         </div>
       </div>
+
+      <div class="contato container">
+        <section class="contato-dados" aria-label="endereço">
+          <h2 class="font-1-m cor-0">Loja Online</h2>
+          <div class="contato-endereco font-2-s cor-4">
+            <p>Rua Logo alí, 35</p>
+            <p>Rio de Janeiro - RJ</p>
+            <p>Brasil - Terra - Via láctea</p>
+          </div>
+
+          <address class="contato-meios font-2-s cor-4">
+            <a href="mailto:contato@bikcraft.com"></a>
+            <a href="mailto:assistencia@bikcraft.com"
+              >assistencia@bikcraft.com</a
+            >
+            <a href="tel:+552199999999">+55 21 9999-9999</a>
+          </address>
+
+          <div class="contato-redes">
+            <a href=""><img src="./icons/instagram-p.svg" alt="" /></a>
+            <a href=""><img src="./icons/facebook-p.svg" alt="" /></a>
+            <a href=""><img src="./icons/youtube-p.svg" alt="" /></a>
+          </div>
+        </section>
+
+        <section class="contato-formulario" aria-label="formulario">
+          <form class="form" action="./contato.html">
+            <div>
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" placeholder="Seu nome" />
+            </div>
+            <div>
+              <label for="phone">Telefone</label>
+              <input type="text" name="phone" placeholder="(xx)-xxxx-xxxx" />
+            </div>
+            <div class="col-2">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="contato@email.com"
+              />
+            </div>
+            <div class="col-2">
+              <label for="mensage">Mensagem</label>
+              <textarea
+                name="mensagem"
+                id="mensagem"
+                cols="30"
+                rows="5"
+                placeholder="O que você precisa?"
+              ></textarea>
+            </div>
+            <button class="btn">Enviar Mensagem</button>
+          </form>
+        </section>
+      </div>
     </main>
-
-    <div class="contato container">
-      <section class="contato-dados" aria-label="endereço">
-        <h2 class="font-1-m cor-0">Loja Online</h2>
-        <div class="contato-endereco font-2-s cor-4">
-          <p>Rua Logo alí, 35</p>
-          <p>Rio de Janeiro - RJ</p>
-          <p>Brasil - Terra - Via láctea</p>
-        </div>
-        <address class="contato-meios font-2-s cor-4">
-          <a href="mailto:contato@bikcraft.com"></a>
-          <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
-          <a href="tel:+552199999999">+55 21 9999-9999</a>
-        </address>
-        <div class="contato-redes">
-          <a href=""><img src="./icons/instagram-p.svg" alt="" /></a>
-          <a href=""><img src="./icons/facebook-p.svg" alt="" /></a>
-          <a href=""><img src="./icons/youtube-p.svg" alt="" /></a>
-        </div>
-      </section>
-
-      <section class="contato-formulario" aria-label="formulario">
-        <form class="form" action="./contato.html">
-          <div>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" placeholder="Seu nome" />
-          </div>
-          <div>
-            <label for="phone">Telefone</label>
-            <input type="text" name="phone" placeholder="(xx)-xxxx-xxxx" />
-          </div>
-          <div class="col-2">
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="contato@email.com" />
-          </div>
-          <div class="col-2">
-            <label for="mensage">Mensagem</label>
-            <textarea
-              name="mensagem"
-              id="mensagem"
-              cols="30"
-              rows="5"
-              placeholder="O que você precisa?"
-            ></textarea>
-          </div>
-          <button class="btn">Enviar Mensagem</button>
-        </form>
-      </section>
-    </div>
 
     <article class="lojas container">
       <h2 class="font-1-xxl cor-12">

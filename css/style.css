@@ -22,5 +22,5 @@
 @import "./bicicletas/bicicletas-listas.css";
 @import "./bicicletas/seguro-lista.css";
 @import "/contato/contato.css";
-@import "/contato/form.css";
+@import "/css/utilidades/form.css";
 @import "/contato/lojas.css";
